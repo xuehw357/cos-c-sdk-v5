@@ -90,6 +90,8 @@ include_directories(${APR_UTIL_INCLUDE_DIR})
 include_directories(${MINIXML_INCLUDE_DIR})
 include_directories(${CURL_INCLUDE_DIR})
 
+include_directories(/opt/axis/acapsdk/sysroots/armv7hf/usr/include)
+
 aux_source_directory(cos_c_sdk SRC_LIST)
 
 add_library(${CMAKE_PROJECT_NAME} SHARED ${SRC_LIST})
